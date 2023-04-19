@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/x-icon" href="src/logo.png">
+    <title>Školský zpravodaj - Novinky</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+        .nadpis1 {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .nadpis {
+            font-size: 36px;
+        }
+
+        .pos-h1 {
+            left: 1rem;
+            top: 18px;
+        }
+
+        .header-width {
+            width: 100%;
+        }
+
+        .material-symbols-outlined {
+            font-size: 30px;
+            position: relative;
+            top: 4px;
+            margin-right: 6px;
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 700,
+                'GRAD' 0,
+                'opsz' 48
+        }
+
+        @media screen and (max-width: 930px) {
+            header h3 {
+                display: none;
+            }
+        }
+
+        .fixvec {
+            margin-top: 84px;
+        }
+
+        .justify-text {
+            text-align: justify;
+            font-size: 20px;
+        }
+
+        .imagetext {
+            float: right;
+            margin-left: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 580px) {
+            .imagetext {
+                display: none;
+            }
+        }
+
+        .center-div {
+            margin: auto;
+        }
+
+        .animate-left {
+            position: relative;
+            animation: animateleft 0.6s
+        }
+
+        @keyframes animateleft {
+            from {
+                left: -30%;
+                opacity: 0
+            }
+
+            to {
+                left: 0;
+                opacity: 1
+            }
+        }
+        img{width: 100%;}
+    </style>
+
+</head>
+
+<body>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <h3 class="position-absolute pos-h1">
+            <span class="material-symbols-outlined">
+                feed
+            </span>
+            Školský zpravodaj
+        </h3>
+        <ul class="nav nav-pills">
+            <!--    Starej 
+            <li class="nav-item"><a href="#" class="nav-link active btn btn-secondary" aria-current="page">Domů</a></li>
+            <li class="nav-item"><a href="#" class="nav-link btn btn-outline-secondary mx-2">Novinky</a></li>
+            <li class="nav-item"><a href="#" class="nav-link btn btn-outline-secondary">Aktuality</a></li>
+            !-->
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-light">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked><a href="index.html"
+                        class="text-decoration-none text-dark">Domů</a>
+                </label>
+                <label class="btn btn-light">
+                    <input type="radio" name="options" id="option2" autocomplete="off"><a href="clanky.html"
+                        class="text-decoration-none text-dark">Články</a>
+                </label>
+                
+            </div>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="card center-div animate-left" style="width: 18rem;">
+            <div class="card-body">
+                <img
+                    src="https://i0.wp.com/tstoaddicts.com/wp-content/uploads/2013/10/comic-book-guy-laptop.jpg?fit=289%2C229&ssl=1">
+                <h5 class="card-title">Jakub Král</h5>
+                <p class="card-text">Pohlaví:muž
+                    <br>
+                    Average series watcher
+                    <br>
+                    Věk:15 let
+                    <br>
+                    Hráč závodních her
+                <br>Coder</p>
+                <a href="clanky.html" class="btn btn-dark">Zpátky na všechny články</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
